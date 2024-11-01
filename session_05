@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace DangNguyenPhuongAnh_31231027548
+{
+    internal class session_05
+    {
+        public static void Man(string[] args)
+        //Write a C# function to find the maximum of three numbers.
+        {
+            int a = 5;
+            int b = 7;
+            int c = 9;
+            int max = Max3Nums(a, b, c);
+            Console.WriteLine($"{max}");
+
+
+        }
+
+        static int Max2Nums(int a, int b)
+        {
+            return a > b ? a : b;
+        }
+        static int Max3Nums(int a, int b, int c)
+        {
+            return Max2Nums(a, Max2Nums(b, c));
+
+        }
+    }
+
+    class exercise_02
+    {
+        public static void Main(string[] args)
+        {
+            int a = 5;
+            for (int i = 1, i == a, i++) ;
+
+
+        }
+        
+       
+        
+    }
+}
+
+
