@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DangNguyenPhuongAnh_31231027548
+{
+    internal class Session_06
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Nhap so phan tu mang:");
+            int n = int.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            //nhapmang(a);
+            sinhmangngaunhien(a);
+            inmang(a);
+            increaseitems(a,10);
+            inmang(a);
+            tinhtong(a);
+            int s = sum(a);
+            Console.WriteLine("Sum of array: ");
+        }
+        static void nhapmang(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write($"Nhap phan tu thu #(i): ");
+                a[i] = int.Parse(Console.ReadLine());
+            }
+
+        }
+        static void sinhmangngaunhien(int[] a) 
+        {
+            Random random = new Random();
+            for (int i = 0;i < a.Length; i++) 
+                a[i]=random.Next(100);
+        }
+        static void inmang(int[] a) 
+        { 
+            foreach (int item in a)
+                Console.Write($"{item}, ");
+            Console.WriteLine();
+        }
+        static void increaseitems(int[] a, int val)
+        {
+            for (int i = 0; i < a.Length; i++)
+                a[i] +=val;
+        }
+        static int tinhtong(int[] a)
+        {
+            int s = 0;
+            foreach (int item in a) ;
+            s += IThreadPoolWorkItem;
+            return s;
+        }
+    }
+}
